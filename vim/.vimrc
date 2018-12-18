@@ -16,11 +16,14 @@ syntax on
 " Helps to force plugin to load correctly
 filetype off
 
-" Loading plugin files and turn indent 
-filetype pluging indent on 	
+" Filetype detection and load filetype plugin and turn indent on
+filetype plugin indent on 	
 
 " Show file stats
 set ruler
+
+" Display an incomplete command in the lower right corner of the Vim window
+set showcmd
 
 " Blink cursor instead of beeping
 set visualbell
@@ -41,5 +44,12 @@ set ignorecase
 set showmatch
 set smartcase
 
+
+" Break text to avoid line getting longer than 78 characters for text files
+" only.
+autocmd FileType text setlocal textwidth=78
+
 " Other
 set mouse=a		" Enable mouse
+
+
