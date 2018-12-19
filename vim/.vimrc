@@ -19,6 +19,9 @@ filetype off
 " Filetype detection and load filetype plugin and turn indent on
 filetype plugin indent on 	
 
+" Highlight current line
+" set cursorline
+
 " Show file stats
 set ruler
 
@@ -30,8 +33,9 @@ set visualbell
 
 " Indentation and Tab
 set shiftwidth=4
-set tabstop=4
-"set softtabstop=4
+set tabstop=4 " Number of spaces a tab counts for when a file is opened
+set softtabstop=4 " Number of spaces a tab counts for when a tab is inserted
+set expandtab	" Tabs are spaces
 "set smarttab
 set autoindent
 set smartindent
