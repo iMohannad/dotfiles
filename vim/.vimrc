@@ -44,6 +44,11 @@ set ignorecase
 set showmatch
 set smartcase
 
+" Show status line always. The value can be 0, 1, or 2:
+" 	0: never
+" 	1: if there are more than one window
+" 	2: alwaysj
+set laststatus=2
 
 " Break text to avoid line getting longer than 78 characters for text files
 " only.
