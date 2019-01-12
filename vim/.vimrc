@@ -42,16 +42,16 @@ set smartindent
 set wrap
 
 " Search
-set hlsearch
-set incsearch
-set ignorecase
-set showmatch
+set hlsearch        " Search highlighting
+set incsearch       " Show the pattern while typing the word
+set ignorecase      
+set showmatch       " When a bracket is inserted, briefly jump to the matching one
 set smartcase
 
 " Show status line always. The value can be 0, 1, or 2:
 " 	0: never
 " 	1: if there are more than one window
-" 	2: alwaysj
+" 	2: always
 set laststatus=2
 
 " Break text to avoid line getting longer than 78 characters for text files
