@@ -32,7 +32,7 @@ set showcmd
 set visualbell
 
 " Indentation and Tab
-set shiftwidth=4
+set shiftwidth=4 " Number of spaces to use for each step of (auto)indent
 set tabstop=4 " Number of spaces a tab counts for when a file is opened
 set softtabstop=4 " Number of spaces a tab counts for when a tab is inserted
 set expandtab	" Tabs are spaces
