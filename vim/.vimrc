@@ -58,6 +58,12 @@ set laststatus=2
 " only.
 autocmd FileType text setlocal textwidth=78
 
+" Moving between window with Ctrl
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
 " Other
 set mouse=a		" Enable mouse
 
