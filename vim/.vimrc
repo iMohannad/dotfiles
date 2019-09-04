@@ -59,6 +59,7 @@ set laststatus=2
 " Break text to avoid line getting longer than 78 characters for text files
 " only.
 autocmd FileType text setlocal textwidth=78
+set colorcolumn=78  " Set a vertical column at column 78
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
