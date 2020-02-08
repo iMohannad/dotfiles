@@ -19,19 +19,41 @@ filetype off
 " Filetype detection and load filetype plugin and turn indent on
 filetype plugin indent on 	
 
+" Other
+set mouse=a		" Enable mouse
+
+" LEADER SHORTCUTS
+" ----------------
+let mapleader=","   " Leader is a comma
+
+" Turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
+" jk is esacpe
+inoremap jk <esc>
+
+" UI CONFIG
+" ----------------
 " Highlight current line
 " set cursorline
 
 " Show file stats
 set ruler
 
+" highlight current line
+set cursorline
+
 " Display an incomplete command in the lower right corner of the Vim window
 set showcmd
+
+" Visual autocomplete for command menu
+set wildmenu
 
 " Blink cursor instead of beeping
 set visualbell
 
-" Indentation and Tab
+" INDENTATION & TAB
+" ----------------
 set shiftwidth=4
 set tabstop=4 " Number of spaces a tab counts for when a file is opened
 set softtabstop=4 " Number of spaces a tab counts for when a tab is inserted
@@ -41,11 +63,12 @@ set autoindent
 set smartindent
 set wrap
 
-" Search
-set hlsearch        " Search highlighting
-set incsearch       " Show the pattern while typing the word
-set ignorecase      
-set showmatch       " When a bracket is inserted, briefly jump to the matching one
+" SEARCH
+" -----------------
+set hlsearch " Highlight matches
+set incsearch " Search as characters are entered
+set ignorecase
+set showmatch
 set smartcase
 
 " Show status line always. The value can be 0, 1, or 2:
@@ -58,7 +81,7 @@ set laststatus=2
 " only.
 autocmd FileType text setlocal textwidth=78
 
-" Other
-set mouse=a		" Enable mouse
-
-
+" MOVEMENT
+" ----------------
+nmap j gj
+nmap k gk
