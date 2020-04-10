@@ -31,9 +31,6 @@ inoremap jk <esc>
 
 " UI CONFIG
 " ----------------
-" Highlight current line
-" set cursorline
-
 " Show file stats
 set ruler
 
